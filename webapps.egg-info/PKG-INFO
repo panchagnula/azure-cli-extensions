@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: webapps
-Version: 0.0.4
+Version: 0.0.5
 Summary: An Azure CLI Extension to manage appservice resources
 Home-page: https://github.com/Azure/azure-cli-extensions
 Author: Sisira Panchagnula

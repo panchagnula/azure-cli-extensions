@@ -22,11 +22,11 @@ class WebappsExtCommandLoader(AzCommandsLoader):
 
     def load_command_table(self, _):
         with self.command_group('webapp') as g:
-            g.custom_command('quickstart', 'create_deploy_webapp')
+            g.custom_command('new', 'create_deploy_webapp')
         return self.command_table
 
     def load_arguments(self, _):
-        with self.argument_context('webapp quickstart') as c:
+        with self.argument_context('webapp new') as c:
             c.argument('name', options_list=['--name', '-n'], help='name of the new webapp')
             c.argument('dryrun',
                        help="shows summary of the create and deploy operation instead of executing it",
