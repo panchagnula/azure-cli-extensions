@@ -8,13 +8,16 @@ import zipfile
 from azure.cli.core.commands.client_factory import get_mgmt_service_client
 from azure.mgmt.resource.resources.models import ResourceGroup
 
+
 def _resource_client_factory(cli_ctx, **_):
     from azure.cli.core.profiles import ResourceType
     return get_mgmt_service_client(cli_ctx, ResourceType.MGMT_RESOURCE_RESOURCES)
 
+
 def web_client_factory(cli_ctx, **_):
     from azure.mgmt.web import WebSiteManagementClient
     return get_mgmt_service_client(cli_ctx, WebSiteManagementClient)
+
 
 def zip_contents_from_dir(dirPath):
     relroot = os.path.abspath(os.path.join(dirPath, os.pardir))
@@ -47,7 +50,7 @@ def is_node_application(path):
 def get_node_runtime_version_toSet():
     version_val = "8.0"
     # trunc_version = float(node_version[:3])
-    # TODO: call the list_runtimes once there is an API that returs the supported versions
+    # TODO: call the list_runtimes once there is an API that returns the supported versions
     return version_val
 
 
