@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: webapp
+Version: 0.0.6
+Summary: An Azure CLI Extension to manage appservice resources
+Home-page: https://github.com/Azure/azure-cli-extensions
+Author: Sisira Panchagnula
+Author-email: sisirap@microsoft.com
+License: MIT
+Description: An Azure CLI Extension to manage appservice resources
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License

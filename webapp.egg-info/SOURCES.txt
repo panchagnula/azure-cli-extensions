@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+azext_webapp/__init__.py
+azext_webapp/_help.py
+azext_webapp/create_util.py
+azext_webapp/custom.py
+webapp.egg-info/PKG-INFO
+webapp.egg-info/SOURCES.txt
+webapp.egg-info/dependency_links.txt
+webapp.egg-info/top_level.txt
