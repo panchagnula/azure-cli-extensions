@@ -142,17 +142,15 @@ def create_deploy_webapp(cmd, name, location=None, dryrun=False):
     #work around until the timeout limits issue for linux is investigated & fixed
     # wakeup kudu, by making an SCM call
     
-    import time
     import requests
     #work around until the timeout limits issue for linux is investigated & fixed
-    logger.warning("Creating zip with contents of dir %s ...", src_dir)
     user_name, password = _get_site_credential(cmd.cli_ctx, rg_name, name)
     scm_url = _get_scm_url(cmd, rg_name, name)
     import urllib3
     authorization = urllib3.util.make_headers(basic_auth='{0}:{1}'.format(user_name, password))
     requests.get(scm_url + '/api/settings', headers=authorization)
-    time.sleep(5)
     
+    logger.warning("Creating zip with contents of dir %s ...", src_dir)
     # zip contents & deploy
     zip_file_path = zip_contents_from_dir(src_dir)
 
