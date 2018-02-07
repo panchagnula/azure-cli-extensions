@@ -90,4 +90,4 @@ def check_app_exists(cmd, rg_name, app_name):
     for item in list(client.web_apps.list_by_resource_group(rg_name)):
         if item.name == app_name:
             return True
-        return False
+    return False
