@@ -28,7 +28,7 @@ class WebappExtCommandLoader(AzCommandsLoader):
     def load_arguments(self, _):
         with self.argument_context('webapp new') as c:
             c.argument('name', options_list=['--name', '-n'], help='name of the new webapp')
-            c.argument('dryrun', options_list=['--dryrun', '-dr'],
+            c.argument('dryrun',
                        help="shows summary of the create and deploy operation instead of executing it",
                        default=False, action='store_true')
 
