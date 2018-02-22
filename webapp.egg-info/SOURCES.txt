@@ -1,6 +1,7 @@
 setup.cfg
 setup.py
 azext_webapp/__init__.py
+azext_webapp/_constants.py
 azext_webapp/_help.py
 azext_webapp/create_util.py
 azext_webapp/custom.py
